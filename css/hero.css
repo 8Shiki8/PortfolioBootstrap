@@ -1,0 +1,49 @@
+.hero{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height:20rem;
+    overflow: hidden;
+}
+.title-hero{
+    text-align: center;
+}
+.hero-button{
+    background-color: #1a4874;
+    color:var(--title-color1);
+    width:fit-content;
+    padding: 0 20px;
+    
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.textTitle2{
+    color:var(--title-color2);
+    font-size: 3rem;
+    padding: 2rem;
+    text-align: center;
+}
+.imgLeft{
+    width: 10rem;
+    height: auto;
+    position: absolute;
+    left: -20px;
+    bottom: 3rem;
+   
+    overflow: hidden;
+    z-index: -1;
+}
+.imgRight{
+    width: 10rem;
+    height: auto;
+    position: absolute;
+    right: -20px;
+    bottom: 3rem;
+    animation: alternate;
+    overflow: hidden;
+    z-index: -1;
+}

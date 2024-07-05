@@ -1,0 +1,180 @@
+ a {
+     text-decoration: none;
+     /* Quitar subrayado */
+     color: inherit;
+     /* Heredar el color del texto del elemento padre */
+     display: inline-block;
+     /* Asegurar que el enlace tenga el mismo tamaño que el contenido */
+ }
+
+ .piePagina {
+     margin: 0;
+     bottom: 0;
+     width: 100%;
+     text-align: center;
+     color: white;
+    background-color: #a678d1;
+    background-image: linear-gradient(to bottom, #162d42 0%, #0c1d36 50%, #101a30 100%);
+     padding: 20px 0px;
+
+
+
+ }
+
+ .socialIcon:hover {
+     filter: drop-shadow(2px 2px 4px #00000080);
+     animation: aniIcon 1s ease-in-out infinite alternate;
+ }
+
+ .footerText {
+     margin: 20px;
+ }
+
+ .path2 {
+     fill: white;
+     animation: lineFooter 0.3s linear infinite;
+ }
+
+ @media(min-width:768px) {
+    .BGimagen {
+            z-index: -100;
+            position: absolute;
+            width: 100%;
+            height: 700px;
+            background-image: url("../Assets/BGgames.webp");
+            backdrop-filter: blur(10px);
+            filter: blur(12px);
+            background-size: cover;
+            background-position: center;
+        }
+    
+.frontImagen {
+        
+        width: 800px;
+        
+    }
+     .navs-links {
+         display: flex;
+     }
+
+     .boton-menu {
+         display: none;
+     }
+
+     .btn-carrito2 {
+         visibility: visible;
+         display: none !important;
+         position: absolute !important;
+         top: -45px !important;
+         right: 20px !important;
+         text-align: right;
+     }
+
+     .bi-controller {
+         width: 40px;
+         height: 40px;
+     }
+
+     .textTitle {
+         font-size: 2.5rem;
+     }
+
+     .socialIcon {
+         margin: 10px;
+         width: 30px;
+         height: 30px;
+     }
+
+     .bi-shop-window {
+         width: 60px;
+         /* Ajusta el ancho según tus preferencias */
+         height: 60px;
+         /* Ajusta la altura según tus preferencias */
+     }
+ }
+
+ @keyframes sunAni {
+    0%{
+        filter:blur(5px)
+    }
+    100%{
+        filter: blur(0%)
+    }
+ }
+  @keyframes moonAni {
+      0% {
+          filter: blur(5px)
+      }
+
+      100% {
+          filter: blur(0px)
+      }
+  }
+ 
+  
+@keyframes imgJoyL
+{
+    
+    0% {
+        transform: rotate(0deg);
+        }
+    
+    50% {
+        transform: rotate(20deg);
+        }
+        100%{
+        transform: rotate(0deg);
+        }
+
+}
+
+@keyframes imgJoyR {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+
+ @keyframes lineFooter {
+     0% {
+         stroke: white;
+     }
+
+     25% {
+         stroke: yellow;
+     }
+
+     50% {
+         stroke: #00ff0d;
+     }
+
+     75% {
+         stroke: magenta;
+     }
+
+     100% {
+         stroke: cyan;
+     }
+
+ }
+
+
+
+ @keyframes aniIcon {
+     0% {
+         filter: drop-shadow(0px 0px 0px rgb(100, 100, 100));
+     }
+
+     100% {
+         filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+     }
+ }

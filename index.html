@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" modo="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+
+
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="textTitle title-hero">GameStore</h1>
+            <div><img class="menuButton" src="./Assets/icons/menu.svg" alt=""></div>
+        </nav>
+        <div class="button-panel">
+            <input class="checkbox-button" id="switch" type="checkbox">
+            <label title="Tema" class="real-switch" for="switch"></label>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="White" class="bi bi-moon-fill"
+            viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+        </svg>
+        <div class="containerBG">
+            <div class="BGimagen"> </div>
+            <img class="frontImagen" src="./Assets/BGgames.webp" alt="">
+
+        </div>
+
+
+
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#871f97" fill-opacity="1" d="M0,0L720,320L1440,0L1440,0L720,0L0,0Z"></path>
+        </svg> -->
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#871f97" fill-opacity="1" d="M0,288L720,0L1440,288L1440,0L720,0L0,0Z"></path>
+        </svg> -->
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
+            <path fill="#871f97" fill-opacity="1" style="stop-color:#871f97;"
+                d="M0,0L0,224L51.4,224L51.4,96L102.9,96L102.9,192L154.3,192L154.3,64L205.7,64L205.7,192L257.1,192L257.1,32L308.6,32L308.6,64L360,64L360,288L411.4,288L411.4,128L462.9,128L462.9,288L514.3,288L514.3,224L565.7,224L565.7,32L617.1,32L617.1,96L668.6,96L668.6,32L720,32L720,224L771.4,224L771.4,320L822.9,320L822.9,128L874.3,128L874.3,160L925.7,160L925.7,192L977.1,192L977.1,224L1028.6,224L1028.6,32L1080,32L1080,224L1131.4,224L1131.4,64L1182.9,64L1182.9,96L1234.3,96L1234.3,96L1285.7,96L1285.7,32L1337.1,32L1337.1,160L1388.6,160L1388.6,288L1440,288L1440,0L1388.6,0L1388.6,0L1337.1,0L1337.1,0L1285.7,0L1285.7,0L1234.3,0L1234.3,0L1182.9,0L1182.9,0L1131.4,0L1131.4,0L1080,0L1080,0L1028.6,0L1028.6,0L977.1,0L977.1,0L925.7,0L925.7,0L874.3,0L874.3,0L822.9,0L822.9,0L771.4,0L771.4,0L720,0L720,0L668.6,0L668.6,0L617.1,0L617.1,0L565.7,0L565.7,0L514.3,0L514.3,0L462.9,0L462.9,0L411.4,0L411.4,0L360,0L360,0L308.6,0L308.6,0L257.1,0L257.1,0L205.7,0L205.7,0L154.3,0L154.3,0L102.9,0L102.9,0L51.4,0L51.4,0L0,0L0,0Z">
+            </path>
+        </svg> -->
+        <!-- <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <defs>
+                <linearGradient id="miGradiente" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#871f97;stop-opacity:1; filter:blur(20px)" />
+                </linearGradient>
+            </defs>
+            <path fill="url(#miGradiente)" fill-opacity="1"
+                d="M0,96L13.3,128C26.7,160,53,224,80,213.3C106.7,203,133,117,160,122.7C186.7,128,213,224,240,245.3C266.7,267,293,213,320,208C346.7,203,373,245,400,256C426.7,267,453,245,480,234.7C506.7,224,533,224,560,202.7C586.7,181,613,139,640,138.7C666.7,139,693,181,720,186.7C746.7,192,773,160,800,128C826.7,96,853,64,880,80C906.7,96,933,160,960,154.7C986.7,149,1013,75,1040,90.7C1066.7,107,1093,213,1120,266.7C1146.7,320,1173,320,1200,304C1226.7,288,1253,256,1280,229.3C1306.7,203,1333,181,1360,186.7C1386.7,192,1413,224,1427,240L1440,256L1440,0L1426.7,0C1413.3,0,1387,0,1360,0C1333.3,0,1307,0,1280,0C1253.3,0,1227,0,1200,0C1173.3,0,1147,0,1120,0C1093.3,0,1067,0,1040,0C1013.3,0,987,0,960,0C933.3,0,907,0,880,0C853.3,0,827,0,800,0C773.3,0,747,0,720,0C693.3,0,667,0,640,0C613.3,0,587,0,560,0C533.3,0,507,0,480,0C453.3,0,427,0,400,0C373.3,0,347,0,320,0C293.3,0,267,0,240,0C213.3,0,187,0,160,0C133.3,0,107,0,80,0C53.3,0,27,0,13,0L0,0Z">
+            </path>
+        </svg> -->
+    </header>
+    <main>
+        <section class="hero">
+            <h1 class="textTitle2 textTitle">¡Tus Juegos en un solo Lugar!</h1>
+            <br>
+            <a href="/html/GameStore-Front/tienda.html"> <button class="hero-button textNormal"><b>Ir
+                        a la tienda</b></button> </a>
+
+            <img class="imgLeft" src="./Assets/joy1.png" alt="">
+            <img class="imgRight" src="./Assets/joy2.png" alt="">
+
+        </section>
+        <section class="info">
+            <div class="info-wrapper">
+                <div class="info-text">
+                    <h2 class="subtitle textTitle">PlayStation 4</h2>
+                    <svg class="lineFooter" version="1.1" id="line_2" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="250px" height="5px"
+                        xml:space="preserve">
+                        <path class="path2" fill="#01a09e" stroke-width="3" stroke="white" d="M0 0 l1120 0" />
+                    </svg>
+                    <br>
+                    <br>
+                    <p class="textNormal parrafoMain">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                        earum dolore?
+                        Eligendi officia
+                        veritatis rerum nemo, optio qui delectus, saepe molestiae iste eaque aliquid. Sit ipsa nam
+                        doloribus quos ipsum!
+                        Explicabo nisi ex provident unde est iusto id voluptas adipisci enim omnis mollitia, autem culpa
+                        ab, corporis, quaerat deleniti facere a? Repellat, error quas. Sunt eos harum fugit at sint.</p>
+                    <img src="./Assets/consola1.png" alt="">
+                </div>
+            </div>
+            <div class="info-wrapper">
+                <div class="info-text">
+                    <h2 class="subtitle textTitle">XBox</h2>
+                    <svg class="lineFooter" version="1.1" id="line_2" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="250px" height="5px"
+                        xml:space="preserve">
+                        <path class="path2" fill="#01a09e" stroke-width="3" stroke="white" d="M0 0 l1120 0" />
+                    </svg>
+                    <br>
+                    <br>
+                    <p class="textNormal parrafoMain">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                        earum dolore?
+                        Eligendi officia
+                        veritatis rerum nemo, optio qui delectus, saepe molestiae iste eaque aliquid. Sit ipsa nam
+                        doloribus quos ipsum!
+                        Explicabo nisi ex provident unde est iusto id voluptas adipisci enim omnis mollitia, autem culpa
+                        ab, corporis, quaerat deleniti facere a? Repellat, error quas. Sunt eos harum fugit at sint.</p>
+                    <img src="./Assets/consola2.png" alt="">
+                </div>
+            </div>
+            <div class="info-wrapper">
+                <div class="info-text">
+                    <h2 class="subtitle textTitle">PC</h2>
+                    <svg class="lineFooter" version="1.1" id="line_2" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="250px" height="5px"
+                        xml:space="preserve">
+                        <path class="path2" fill="#01a09e" stroke-width="3" stroke="white" d="M0 0 l1120 0" />
+                    </svg>
+                    <br>
+                    <br>
+                    <p class="textNormal parrafoMain">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
+                        earum dolore?
+                        Eligendi officia
+                        veritatis rerum nemo, optio qui delectus, saepe molestiae iste eaque aliquid. Sit ipsa nam
+                        doloribus quos ipsum!
+                        Explicabo nisi ex provident unde est iusto id voluptas adipisci enim omnis mollitia, autem culpa
+                        ab, corporis, quaerat deleniti facere a? Repellat, error quas. Sunt eos harum fugit at sint.</p>
+                    <img src="./Assets/consola3.png" alt="">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <Script src="./js/index.js"></Script>
+
+</body>
+<footer class="piePagina">
+    <svg class="lineFooter" version="1.1" id="line_2" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="5px" xml:space="preserve">
+        <path class="path2" fill="#01a09e" stroke-width="3" stroke="white" d="M0 0 l1120 0" />
+
+    </svg>
+
+
+    <svg class="socialIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-whatsapp" viewBox="0 0 16 16" title="whatsapp">
+
+        <path class="socialIcon"
+            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+
+    </svg>
+
+
+
+
+
+    <svg class="socialIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-twitter" viewBox="0 0 16 16">
+        <path class="socialIcon"
+            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+    </svg>
+
+
+    <svg class="socialIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-instagram" viewBox="0 0 16 16">
+        <path class="socialIcon"
+            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+    </svg>
+    <svg class="socialIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-facebook" viewBox="0 0 16 16">
+        <path class="socialIcon"
+            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+    </svg>
+    <svg version="1.1" id="line_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+        y="0px" width="100px" height="5px" xml:space="preserve">
+        <path class="path2" fill="#01a09e" stroke-width="3" stroke="white" d="M0 0 l1120 0" />
+    </svg>
+    <br>
+    <p class="footerText textNormal">Copyright © 202x GameStore, Inc.</p>
+</footer>
+
+</html>

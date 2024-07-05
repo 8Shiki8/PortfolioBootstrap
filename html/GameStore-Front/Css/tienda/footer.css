@@ -1,0 +1,172 @@
+ a {
+     text-decoration: none;
+     /* Quitar subrayado */
+     color: inherit;
+     /* Heredar el color del texto del elemento padre */
+     display: inline-block;
+     /* Asegurar que el enlace tenga el mismo tamaño que el contenido */
+ }
+.piePagina
+{
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color:white;
+    background-color: #212529;
+    background-image: linear-gradient(to top, #330867  0%, #30cfd0 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffbdc3 3%, #dd8bad 6%, #e7627d 20%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+    padding: 20px 0px;
+    
+
+    
+}
+.socialIcon:hover
+{
+    filter: drop-shadow(2px 2px 4px #00000080);
+    animation: aniIcon 1s ease-in-out infinite alternate ;
+}
+.footerText
+{
+    margin: 20px;
+}
+.path2
+{
+    fill:white;
+    animation: lineFooter 0.3s linear infinite ;
+}
+
+@media(min-width:768px) {
+
+    .navs-links
+    {
+        display:flex;        
+    }
+    .boton-menu
+    {
+        display:none;
+    }
+    .btn-carrito2
+    {
+        visibility:visible;
+        display: none !important;
+        position: absolute !important;
+        top: -45px !important;
+            right: 20px !important;
+            text-align: right;
+    }
+
+    .bi-controller
+    {
+    width: 40px;
+    height: 40px;
+    }
+    .textTitle
+    {
+        font-size: 4rem;
+    }
+        .socialIcon {
+            margin: 10px;
+            width: 30px;
+            height: 30px;
+        }
+        .bi-shop-window {
+            width: 60px;
+            /* Ajusta el ancho según tus preferencias */
+            height: 60px;
+            /* Ajusta la altura según tus preferencias */
+        }
+}
+@keyframes topVenta {
+    0%
+    {
+        border:4px solid white ;
+    color:white;
+    }
+    25%
+    {
+        border:4px solid yellow ;
+    color:yellow;
+    }
+    50%
+    {
+        border:4px solid #00ff0d ;
+    color:#00ff0d;
+    }
+    75%
+    {
+        border:4px solid magenta;
+    color:magenta;
+    }
+    100%
+    {
+        border:4px solid cyan ;
+    color:cyan;
+    }
+    
+}
+@keyframes iconJoy {
+    0%
+    {
+    opacity: 0;
+
+        fill:#00000000;
+      
+    }
+   50%
+   {
+    opacity: 1;
+    fill:#ffffff85;
+   }
+    100%
+    {
+        fill:#00000000;
+
+    opacity: 0;
+   
+
+    }
+}
+@keyframes lineFooter {
+    0%
+    {
+    stroke:white;
+    }
+    25%
+    {
+    stroke: yellow;
+    }
+    50%
+    {
+    stroke: #00ff0d;
+    }
+    75%
+    {
+    stroke: magenta;
+    }
+    100%
+    {
+    stroke: cyan;
+    }
+    
+}
+@keyframes h1-cambia-color {
+    0% {
+        text-shadow: 1px 1px 2px black, 0 0 9px #000000,
+            0 0 9px #ffffff;
+    }
+
+    100% {
+        text-shadow: 1px 1px 2px black, 0 0 9px #ffffff,
+            0 0 9px #ffffff;
+    }
+}
+@keyframes aniIcon{
+    0% {
+            filter: drop-shadow(0px 0px 0px rgb(100, 100, 100));
+        }
+    
+        100% {
+        filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+        }
+}

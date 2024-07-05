@@ -1,0 +1,16 @@
+main{
+    overflow: hidden;
+}
+.imgLeft
+{
+    fill: white;
+    animation: imgJoyL 2s infinite linear;
+}
+.imgRight
+{
+    fill: white;
+    animation: imgJoyR 2s infinite linear;
+}
+#line_2{
+    color: red;
+}

@@ -1,0 +1,33 @@
+:root[modo="light"] {
+    --bg-color: white;
+    --title-color1: #ffffff;
+    --title-color2: #7522ad;
+    --font-color: black;
+
+}
+
+:root[modo="dark"] {
+    --bg-color: #2e2b2b;
+    --title-color1: #ffffff;
+    --title-color2: #da79e7;
+    --font-color: white;
+
+}
+
+.textNormal {
+
+    font-family: 'Raleway', sans-serif;
+}
+
+.textTitle {
+    font-family: 'Patua One', serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+* {
+    box-sizing: border-box;
+}

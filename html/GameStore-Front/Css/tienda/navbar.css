@@ -1,0 +1,201 @@
+html
+{
+
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+
+    
+}
+.carrito-icon
+{
+    width: 25px !important;
+    height: 25px !important;
+}
+.btn-carrito
+{
+    position: relative;
+    overflow: hidden;
+
+}
+.carrito-counter
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    background-color: red;
+    color: white;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border-radius: 25%;
+    right: 0px;
+    bottom: 0;
+}
+
+body
+{
+    z-index: 300;
+    height: 100vh;
+    display: block;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+
+
+   
+    
+}
+main
+{
+    background-color: #6b229b;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+
+    z-index: 300;
+
+}
+.navbar
+{
+    justify-content: space-between;
+    align-items: center; 
+    z-index: 100;
+    
+}
+.searchBar
+{
+    margin: 20px;
+    z-index: 100;
+        
+}
+.botons-container
+{
+    display: flex;
+}
+#botonBuscar
+{
+    background-color: #6b229b !important;
+    color: white;
+}
+#botonCarrito
+{
+    background-color: #6b229b !important;
+    color: white;
+}
+#botonBuscar:hover
+{
+    background-color: #bb2bdf !important;
+    color: white;
+}
+.navs-links
+{
+    z-index: 100;
+    color:white;
+    margin: 20px;
+    display: none;
+    font-weight: bold;
+   
+}
+.nav-link
+{
+    color: white;
+}
+a.nav-link.active
+{
+    color: white !important;
+}
+a
+{
+    color:white;
+}
+h1
+{
+    position: static;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 200;
+    width: auto;
+    overflow-x: hidden; 
+ 
+
+
+}
+header
+{
+    width:auto ;
+}
+.header-container
+{
+    width: auto;
+    position: relative;
+    background-color: #212529 !important;
+    background-image: linear-gradient(to top, #ffffff 0%, #ffbdc3 3%, #dd8bad 6%, #e7627d 20%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+    overflow:hidden;
+   
+
+    
+    
+}
+  .btn-carrito2 {
+    background-color: #6b229b !important;
+      
+      position: absolute !important;
+      top: -45px !important;
+      right: 70px !important;
+      text-align: right;
+  }
+        .btn-carrito {
+            background-color: #6b229b !important;
+    
+          
+           
+        }
+.boton-menu {
+    background-color: #6b229b !important;
+
+
+    position: absolute;
+    z-index: 200;
+    top: -45px;
+    right: 20px;
+    margin: 0px;
+text-align: right;
+}
+.dropdown
+{
+    z-index: 200;
+}
+.bi-shop-window
+{
+    width: 40px;
+    height: 40px;
+    background-color: #21252900;
+   position: absolute;
+    margin: 7px;
+   top: 0px;
+   left: 0px;
+}
+.bi-controller
+{
+    
+    width: 20px;
+    height: 20px;
+    animation: iconJoy 2s linear infinite forwards ;
+    position: absolute;
+
+    z-index: 1;
+   
+}
+
+.textTitle
+{
+    text-shadow: 1px 1px 2px black, 0 0 9px #ffffff,
+            0 0 9px #ffffff;
+        animation-name: h1-cambia-color;
+        animation-duration: 1s;
+        animation-iteration-count: infinite, 1;
+        animation-direction: alternate-reverse;
+}
+.bg-dark {
+    background-color: #21252900 !important;
+  }
