@@ -1,3 +1,4 @@
+//Main
 window.onload = function () {
   let switchDark = document.getElementById("switch");
   let html = document.getElementsByTagName("html")[0];
