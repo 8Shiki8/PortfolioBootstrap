@@ -13,7 +13,7 @@ window.onload = async function () {
     aniJoy();
 
     let spinner = document.querySelector("#spinner");
-    await delay(2000);
+    await delay(500);
     const productos = await getAllProductos();
 
     productos.forEach((element) => {
